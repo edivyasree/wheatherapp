@@ -1,0 +1,72 @@
+@keyframes changeColor {
+  0% { background-color: #ffcc66; } /* Start color */
+  25% { background-color: #66ccff; } /* 25% of the animation */
+  50% { background-color: #ff6666; } /* 50% of the animation */
+  75% { background-color: #99ff99; } /* 75% of the animation */
+  100% { background-color: #ffcc66; } /* End color */
+}
+
+.app {
+  background-color: #ffcc66; /* Initial background color */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: changeColor 10s infinite; /* Apply animation */
+}
+.app.warm {
+  background-color: #ffcc66; /* Warm background color */
+}
+
+.main {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.search-box {
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  padding: 10px;
+  font-size: 16px;
+  width: 200px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.location-box {
+  margin-bottom: 20px;
+}
+
+.location {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.date {
+  font-size: 16px;
+  margin-top: 5px;
+  color: #666;
+}
+
+.weather-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.temp {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.weather {
+  margin-left: 20px;
+}
+
+.weather h4 {
+  margin-top: 5px;
+  font-size: 16px;
+  color: #666;
+}
